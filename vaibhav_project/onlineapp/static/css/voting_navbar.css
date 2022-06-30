@@ -9,7 +9,7 @@
 nav{
   display: flex;
   height: 80px;
-  width: 100%;
+  width: 100vw;
   background: #1b1b1b;
   align-items: center;
   justify-content: space-between;
@@ -73,11 +73,12 @@ input[type="checkbox"]{
     top: 80px;
     left: -100%;
     background: #111;
-    height: 50vh;
-    width: 60%;
+    height: auto;
+    width: 30%;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+    z-index: 1;
   }
   #click:checked ~ ul{
     left: 0;
@@ -101,19 +102,4 @@ input[type="checkbox"]{
     background: none;
     color: cyan;
   }
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
-}
-.content div{
-  font-size: 40px;
-  font-weight: 700;
 }

@@ -1,24 +1,29 @@
 /* this is css for result page */
 
 /* this is css for graph in result page */
+html{
 
+  font-size: 62.5%;
+}
 .graph{
+  margin:auto;
     display: flex;
-    flex-direction: row;
     font-size: larger;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   width: 80vw;
+  height: auto;
 }
 
 .graph1{
-    margin-top: 2%;
-    margin-left: 5%;
-    height: 30vh;
-    width:50%
+  margin: 30px;
+    height: 40vh;
+    flex : 1 1 35vh;
 }
 .graph2{
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 30vh;
-    width:40%;
+  margin: 30px;
+  height: 30vh;
+  flex : 1 1 35vh;
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
@@ -28,61 +33,40 @@
   box-sizing: border-box;
 }
 
-.page-contain {
+.parent {
+  margin:auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   border: .75em solid white;
-  padding: 2em;
   font-family: 'Open Sans', sans-serif;
+  width: 80vw;
+  height: auto;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
 }
 
-.data-card {
-  display: flex;
-  flex-direction: column;
-  width:20%;
+.child {
   height:35vh;
   overflow: hidden;
   border-radius: .5em;
   text-decoration: none;
-  background:  #3A9BDC;
-  margin: 1em;
+  background:  purple;
+  margin: 20px;
   padding: 2.75em 2.5em;
   box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .7);
   transition: transform .45s ease .45s ease;
+  flex: 1 1 35vh;
 }
-.data-card2 {
-    display: flex;
-    flex-direction: column;
-    width:20%;
-    height:35vh;
-    overflow: hidden;
-    border-radius: .5em;
-    text-decoration: none;
-    background: purple;
-    margin: 1em;
-    padding: 2.75em 2.5em;
-    box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .7);
-    transition: transform .45s ease .45s ease;
-  }
-  .data-card3 {
-    display: flex;
-    flex-direction: column;
-    width:20%;
-    height:35vh;
-    overflow: hidden;
-    border-radius: .5em;
-    text-decoration: none;
-    background:  orange;
-    margin: 1em;
-    padding: 2.75em 2.5em;
-    box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .7);
-    transition: transform .45s ease .45s ease;
-  }
+.child:first-child{
+  background:  #3A9BDC;
+}
+.child:last-child{
+  background: orange;
+}
   
   h3{
-    color:#2E3C40;
-    font-size: 2.0em;
+    color:white;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 1;
     padding-bottom: .5em;
@@ -92,9 +76,9 @@
   }
 
   h4 {
-    color: #627084;
+    color:white;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.1em;
@@ -103,76 +87,27 @@
   }
 
   p {
-    opacity: 0;
     color: #FFFFFF;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.8;
     margin: 0 0 1.25em;
     transform: translateY(-1em);
     transition: opacity .45s ease, transform .5s ease;
   }
-
-  .link-text {
-    display: block;
-    color: #753BBD;
-    font-size: 1.125em;
-    font-weight: 600;
-    line-height: 1.2;
-    margin: auto 0 0;
-    transition: color .45s ease;
-  }
-
-    svg {
-      margin-left: .5em;
-      transition: transform .6s ease;
-    }
-      path {
-        transition: fill .45s ease;
-      }
+  
     
-   .data-card:hover {
+   .child:hover {
     background: #1b1b1b;
     transform: scale(1.02);
   }
-  
-  .data-card2:hover {
-    background: #1b1b1b;
-    transform: scale(1.02);
+@media (max-width:998px) {
+  html{
+  font-size: 90%;
   }
-  
-  .data-card3:hover {
-    background: #1b1b1b;
-    transform: scale(1.02);
-  }
-    h3{
-      color: #FFFFFF;
-      border-bottom-color: #A754C4;
-    }
-
-    h4 {
-      color: #FFFFFF;
-    }
-
-    p {
-      opacity: 1;
-      transform: none;
-    }
-
-    .link-text {
-      color: #FFFFFF;
-    }
-      svg {
-        animation: point 1.25s infinite alternate;
-      } 
-        path {
-          fill: #FFFFFF;
-        }
-
-@keyframes point {
-  0% {
-   transform: translateX(0);
-  }
-  100% {
-    transform: translateX(.125em);
+}
+@media (max-width:768px) {
+  html{
+  font-size: 90%;
   }
 }

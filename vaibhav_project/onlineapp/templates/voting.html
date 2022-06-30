@@ -8,42 +8,7 @@
     <link rel="stylesheet" href="/static/css/voting_navbar.css">
     <link rel="stylesheet" href="/static/css/voting_new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <style>
-    form input[type=submit]{
-    cursor: pointer;
-    padding: 1%;
-    color: white;
-    background-color:#E63B60;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-decoration:wavy;
-    font-size: 35px;
-    overflow: hidden;
-    transition: 0.2s;
-    border-radius: 20px;
-    width: 20%;
-    height: 80%;
-    border-color: aliceblue;
-    margin:5%;
-    }
-    form input[type=submit]:hover{
-        cursor: pointer;
-        padding: 1%;
-        color: white;
-        background-color:black;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        text-decoration:wavy;
-        font-size: 35px;
-        overflow: hidden;
-        transition: 0.2s;
-        border-radius: 20px;
-        width: 20%;
-        height: 80%;
-        border-color: aliceblue;
-        margin:5%;
-        }
-    </style>
+    
 </head>
 <body>
     <!-------------------- navbar start from here -------------------------------------->
@@ -59,7 +24,6 @@
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'profile' %}">Profile</a></li>
           <li><a class="active" href="{% url 'voting' %}">Voting Area</a></li>
-         {% comment %} <li><a href="{% url 'admin' %}">Admin</a></li> {% endcomment %}
           <li><a href="{% url 'result' %}">Result</a></li>
           <li><a href="{% url 'logout' %}">Logout </a></li>
         </ul>
@@ -74,6 +38,7 @@
             </div>
             <div class="detail">
                 <p id="big">Donald Trump</p>
+                <br>
                 <p id="small">Republic Party</p>
                
             </div>
@@ -91,7 +56,7 @@
                     <img src="/static/images/profile.png" alt="">
                 </div>
                 <div class="detail">
-                    <p id="big">Joe Biden</p>
+                    <p id="big">Joe Biden</p><br>
                     <p id="small">Democratic Party</p>
                 </div>
                 <div class="voting-button">
@@ -108,6 +73,7 @@
                 </div>
                 <div class="detail">
                     <p id="big">Barak Obama</p>
+                    <br>
                     <p id="small">Federation Party</p>
                     
                 </div>

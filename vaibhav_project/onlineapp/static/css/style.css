@@ -603,5 +603,37 @@ label.valid {
     margin-right: 0px;
     margin-bottom: 10px; } }
 
+@media(max-width:998px){
+  #loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff center;
+    z-index: 99999;
+  }
+  #loader img{
+    display: block;
+    margin: auto;
+    margin-top: 30vh;
+    width: 60vw;
+  }
+}
+
+@media(max-width:768px){
+  #loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff center;
+    z-index: 99999;
+  }
+  #loader img{
+    display: block;
+    margin: auto;
+    margin-top: 30vh;
+    width: 60vw;
+  }
+}
+
 
  
