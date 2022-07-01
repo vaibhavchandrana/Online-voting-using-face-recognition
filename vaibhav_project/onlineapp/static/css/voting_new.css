@@ -201,7 +201,7 @@ form input[type=submit]{
     
     }
     .detail{
-        padding-top:  5vh ;
+        padding-top:  4vh ;
         width: 45vw;
         line-height: 3rem;
         font-size: 4rem;
@@ -262,7 +262,7 @@ form input[type=submit]{
     .detail{
         padding-top:  2vh ;
         width: 45vw;
-        line-height: 4rem;
+        line-height: 3rem;
         font-size: 4rem;
         text-align: center;
         color: azure;
@@ -288,8 +288,9 @@ form input[type=submit]{
         transition: 0.2s;
         border-radius: 20px;
         width: 12vw;
-        height: 80%;
+        height: 60%;
         border-color: aliceblue;
+        margin-top: 2vh;
     }
     form input[type=submit]{
         cursor: pointer;
@@ -305,6 +306,86 @@ form input[type=submit]{
         border-radius: 20px;
         width: 25vw;
         height: 15vh;
+        border-color: aliceblue;
+        margin:5%;
+        }
+        form input[type=submit]:hover{
+            cursor: pointer;
+            padding: 1%;
+            color: white;
+            background-color:black;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration:wavy;
+            font-size: 2.5rem;
+            overflow: hidden;
+            transition: 0.2s;
+            border-radius: 20px;
+            width: 25vw;
+            height: 15vh;
+            border-color: aliceblue;
+            margin:5%;
+            }
+    
+}
+@media(max-width:500px){
+    html{
+        font-size: 35%;
+    }
+    .profile{
+        padding: 1%;
+        height: 12vh;
+        width: 25vw;
+        margin-top: 3vh;
+    
+    }
+    .detail{
+        padding-top:  3vh ;
+        width: 45vw;
+        line-height: 4rem;
+        font-size: 4rem;
+        text-align: center;
+        color: azure;
+    }
+    .detail>#big{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    
+    .detail>#small{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    button{
+        cursor: pointer;
+        padding: 1%;
+        color: #2196f3;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-decoration:wavy;
+        font-size: 2rem;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 50px;
+        width: 12vw;
+        height: 40%;
+        border-color: aliceblue;
+        margin-top: 5vh;
+    }
+    form input[type=submit]{
+        cursor: pointer;
+        padding: 1%;
+        color: white;
+        background-color:#E63B60;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-decoration:wavy;
+        font-size: 2.5rem;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 20px;
+        width: 25vw;
+        height: 10vh;
         border-color: aliceblue;
         margin:5%;
         }
