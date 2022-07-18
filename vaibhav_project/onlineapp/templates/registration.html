@@ -18,7 +18,7 @@
         <div class="content">
   <!--------------------registration form start here-------------------------------------->
 
-          <form method="post" onsubmit="return validate()">
+          <form method="post" onsubmit=" return validate()">
             {% csrf_token %}
             <div class="user-details">
               <div class="input-box">
@@ -33,6 +33,7 @@
               <div class="input-box">
                 <span class="details">Age</span>
                 <input type="text" placeholder="enter your age" name="age" id="age"required>
+                <br><span id="errorAge" class="error"></span>
               </div>
               <div class="input-box">
                 <span class="details">Phone Number</span>
@@ -52,7 +53,7 @@
             </div>
             <br><span id="error5" class="error"></span>
             <div class="button">
-              <input type="submit" value="Register">
+              <input type="submit" value="Register" id="mysubmit">
             </div>
             
           </form>
@@ -66,9 +67,7 @@
              <a  href={% url 'login' %}><button class="btn">Sign in</button></a>
           </div>
       </div>
-      
-    <script src="/static/js/validation.js" defer ></script>
-    <script src="/static/vendor/jquery/jquery.min.js"></script>
-    <script src="/static/js/main.js"></script>
+
+<script src="/static/js/validation.js" defer ></script>
 </body>
 </html>

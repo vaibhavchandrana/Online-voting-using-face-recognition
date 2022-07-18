@@ -1,4 +1,3 @@
-from logging import exception
 from tkinter import EXCEPTION
 from django.shortcuts import render, HttpResponse, redirect
 import pymysql as mq
@@ -54,7 +53,6 @@ def register(request):
             if sql:
                 return redirect('login')
             phone=request.POST.get('phone')
-            print(phone)
             age=request.POST.get('age')
             password=request.POST.get('pass')
             cpassword=request.POST.get('c_pass')
@@ -163,8 +161,8 @@ def authorization(request):
     path = 'C:/Users/DELL/3D Objects/vaibhav_project/vaibhav_project/onlineapp/static/images/images'
     images = []
     classNames = []
-    myList = os.listdir(path)
-    print(myList)
+    myList = os.listdir(path) 
+    print(myList)  
     for cl in myList:
         curImg = cv2.imread(f'{path}/{cl}')
         images.append(curImg)
